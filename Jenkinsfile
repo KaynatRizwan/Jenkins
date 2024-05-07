@@ -4,12 +4,14 @@ pipeline{
     stages{
         stage('Build'){
             steps {
-                sh 'npm install'
+                // sh 'npm install'
+                                sh 'echo "test is is running"'
+
             }
         }
         stage('test'){
             steps {
-                sh 'Echo "test is running"'
+                sh 'echo "test is running"'
             }
         }
         stage('deploy'){
